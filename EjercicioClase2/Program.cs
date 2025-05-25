@@ -17,14 +17,6 @@ namespace EjercicioClase2
             var myCat = new Cat() { Id = 1, Name = "Gato" };
             Console.WriteLine("Id del gato: " + myCat.Id);
             Console.WriteLine("Nombre del gato: " + myCat.Name);
-            CreateHostBuilder(args).Build().Run();
         }
-
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
     }
 }
